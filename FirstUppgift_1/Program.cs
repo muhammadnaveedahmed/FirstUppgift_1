@@ -17,8 +17,17 @@ namespace prog1_Uppgift1
 
             }
         }
-
-        private static void BreakLine(char v1, int v2)
+        private static void BreakLine(char typeOfChar, int timesToPrint)
+        {
+            //throw new NotImplementedException();
+            string breakLine = "";
+            for (int i = 0; i < timesToPrint; i++)
+            {
+                breakLine += typeOfChar;
+            }
+            Console.WriteLine(breakLine);
+        }
+       /* private static void BreakLine(char v1, int v2)
         {
             //throw new NotImplementedException();
             string breakLine = "";
@@ -27,7 +36,7 @@ namespace prog1_Uppgift1
                 breakLine += v1;
             }
             Console.WriteLine(breakLine);
-        }
+        }*/
 
         private static void BreakLine()
         {
@@ -92,11 +101,11 @@ namespace prog1_Uppgift1
             }
         }
 
-        private static void BreakLine1(char breakLineType, int length)
+       /* private static void BreakLine1(char breakLineType, int length)
         {
             string breakLine = new string(breakLineType, length);
             Console.WriteLine(breakLine);
-        }
+        }*/
 
     }
 }
