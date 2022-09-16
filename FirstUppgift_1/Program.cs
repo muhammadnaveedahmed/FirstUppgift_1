@@ -20,10 +20,19 @@ namespace prog1_Uppgift1
 
         private static void BreakLine(char v1, int v2)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            string breakLine = "";
+            for (int i = 0; i < v2; i++)
+            {
+                breakLine += v1;
+            }
+            Console.WriteLine(breakLine);
         }
 
-        private static void BreakLine() => throw new NotImplementedException();
+        private static void BreakLine()
+        {
+            Console.WriteLine("--------------------------");
+        }
 
         static void MainMenuText()
         {
